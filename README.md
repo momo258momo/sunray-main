@@ -1,75 +1,53 @@
-## Introduction
-**SUNRAY** - An eyewear ecommerce application built with PHP, Laravel, Vite, Bootstrap, and MySQL.
+# 🕶️ AI Eyeglasses Store
 
-**SUNRAY Link** - http://sunray.thsite.top
-<br/>
-<br/>
-![SUNRAY - Showcase](https://github.com/bhupindersingh007/sunray/assets/63149405/3d3c4ee6-c8ed-4792-808e-42f59174a0d4)
+## Introduction
+AI Eyeglasses Store – An AI-powered eyewear e-commerce website that integrates face shape recognition and virtual try-on technology to help users choose eyeglasses that best suit their facial features.
+
+The system combines traditional online shopping with Artificial Intelligence, providing a more personalized and interactive shopping experience.
+
+---
 
 ## Features
-- **User Authentication:** Laravel built-in login, sign-up, and logout for user accounts.
-- **Product Search & Filters:** Easily find products with search and custom filters.
-- **Cart System:** Add, remove, and manage items in your cart easily.
-- **Checkout:** Easy way to pay for your items and provide your address for delivery.
-- **User Settings:** Update account info, password, or delete account.
-- **Orders History:** View past orders for tracking and reordering.
-- **Dashboard:** Manage orders, preferences, and account settings from one place.
-- **Responsive UI:** Browse and shop on any device with a mobile-friendly design.
-- **Flash Messages:** Quick notifications for important actions like successful login, item added to cart, or order confirmation.
 
-## Demo
+### Customer
+- User authentication (register, login, logout)
+- View product list and product details
+- Search eyeglasses by product name
+- Shopping cart management (add, update, remove)
+- Checkout with Cash on Delivery (COD)
+- View order history and order details
+- Upload face image for AI face shape recognition
+- Receive eyeglasses recommendations based on face shape
+- Virtual eyeglasses try-on
 
-https://github.com/bhupindersingh007/sunray/assets/63149405/886c6865-05fc-4baa-a408-a6dea0752dd5
+### Admin
+- Admin authentication and dashboard
+- Product management (add, edit, activate/deactivate)
+- Order management (view orders, update order status)
+- User management
 
+---
 
-## Showcase
+## AI Features
+- Face detection and image preprocessing
+- Face shape classification (Oval, Round, Square, Heart, Oblong)
+- Transfer learning with MobileNetV2
+- Real-time AI inference without storing user images
+- Facial landmark detection for virtual try-on
 
-![Home](https://github.com/bhupindersingh007/sunray/assets/63149405/96753e27-93f8-490b-b20c-89ed4761cf9e)
+---
 
-### Register & Login
-![Register](https://github.com/bhupindersingh007/sunray/assets/63149405/1673d258-3d10-4e78-b1a7-050843356076)
-![Login](https://github.com/bhupindersingh007/sunray/assets/63149405/fb9f1f6b-5715-4532-989e-ac966b597f8f)
+## Technology Stack
+- PHP – Backend web development
+- Python (Flask) – AI service and API
+- CNN (MobileNetV2) – Face shape recognition model
+- MySQL – Relational database
+- HTML, CSS, JavaScript – Frontend
+- OpenCV / Dlib – Image processing and face landmark detection
 
-### Products Details, Search & Filters
-![Products with Search & Filters](https://github.com/bhupindersingh007/sunray/assets/63149405/7d48694d-7686-487a-8ea4-5244f3cdf851)
-![Product Details](https://github.com/bhupindersingh007/sunray/assets/63149405/8dd3536e-51ca-4d7b-9712-25f09f973dea)
+---
 
-### Shopping Cart
-![Cart](https://github.com/bhupindersingh007/sunray/assets/63149405/c029717c-fc8f-4c3e-b527-292e6cfa5680)
+## Project Purpose
+This project aims to apply Artificial Intelligence to an eyewear e-commerce system, improving user experience by providing personalized eyeglass recommendations and virtual try-on functionality.
 
-### Customer Dashboard  
-![My Account](https://github.com/bhupindersingh007/sunray/assets/63149405/11d90d0f-a072-4c06-aa23-ee1361239901)
-
-### Customer Orders History
-![My Orders](https://github.com/bhupindersingh007/sunray/assets/63149405/835995f5-c968-4911-a148-98f117e6ac04)
-![Order Detailed Information](https://github.com/bhupindersingh007/sunray/assets/63149405/475feb2f-b9fe-40f6-8675-36ba6290d245)
-
-### Update or Delete Account & Update Password 
-![Update & Delete Account](https://github.com/bhupindersingh007/sunray/assets/63149405/505e48dd-d2e8-41d4-95ba-e260fa15474e)
-![Update Password](https://github.com/bhupindersingh007/sunray/assets/63149405/726a5441-cccd-43c9-b87d-381e6089b568)
-
-## Installation
-
-**Requirements**: PHP >= 8.1, Composer, RDBMS (such as MySQL, MariaDB, PostgreSQL, etc.)
-
-**Installation Steps:**
-
-1. Clone the repository ```git clone https://github.com/bhupindersingh007/sunray.git``` or download zip.
-2. Open the directory ```sunray``` in the terminal.
-3. Install composer dependencies ```composer install```.
-4. Make a new ```.env``` file and copy ```.env.example``` file to ```.env```.
-5. Set the database configuration in the ``.env`` like ```DB_DATABASE, DB_USERNAME and DB_PASSWORD```etc.
-7. Generate key: ```php artisan key:generate```.
-8. Run ```php artisan migrate:refresh --seed```
-9. Run ```npm i``` and ```npm build```.
-10. Run the application: ```php artisan serve```.
-    
-## Technology Stack 
-
-- [PHP 8.1](https://www.php.net/) - A popular general-purpose scripting language for web development.
-- [Laravel 10](https://laravel.com/docs/10.x) - PHP fullstack web application framework.
-- [MySQL 8.0](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/) - The world's most popular open source relational database.
-- [Feather Icons](https://feathericons.com) - Simply beautiful open source SVG icons.
-- [Vite Plugin](https://github.com/laravel/vite-plugin) - Laravel plugin for Vite.
-- [Bootstrap 5](https://github.com/twbs/bootstrap) - The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
-"# sunray-main" 
+It also serves as a practical application of computer vision and deep learning techniques in a real-world web system.
