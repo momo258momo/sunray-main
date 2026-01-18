@@ -31,7 +31,7 @@ The system combines traditional online shopping with Artificial Intelligence, pr
 ## System Implementation Results
 
 ### Register Screen
-![Register screen](public/images/Demo/Register screen.png)
+![Register screen](public/images/Demo/Register%20screen.png)
 
 *Figure 3.1 Register screen*
 
@@ -40,7 +40,7 @@ The registration screen allows users to create a new account by entering basic i
 ---
 
 ### Login Screen
-![Login screen](public/images/Demo/Login screen.png)
+![Login screen](public/images/Demo/Login%20screen.png)
 
 *Figure 3.2 Login screen*
 
@@ -49,7 +49,7 @@ The login screen allows users and administrators to access the system using thei
 ---
 
 ### Home Screen
-![Home screen](public/images/Demo/Home screen.png)
+![Home screen](public/images/Demo/Home%20screen.png)
 
 *Figure 3.3 Home screen*
 
@@ -58,7 +58,7 @@ The home screen displays banners, featured products, search functionality, and p
 ---
 
 ### Product Page
-![Product page](public/images/Demo/Product page.png)
+![Product page](public/images/Demo/Product%20page.png)
 
 *Figure 3.4 Product page*
 
@@ -67,7 +67,7 @@ This page displays all available eyeglasses with images, names, prices, and avai
 ---
 
 ### Product Detail Page
-![Product detail page](public/images/Demo/Product detail page.png)
+![Product detail page](public/images/Demo/Product%20detail%20page.png)
 
 *Figure 3.5 Product detail page*
 
@@ -76,7 +76,7 @@ The product detail page provides detailed information including product descript
 ---
 
 ### Glasses Suggest Page
-![Glasses suggest page](public/images/Demo/Glasses suggest page.png)
+![Glasses suggest page](public/images/Demo/Glasses%20suggest%20page.png)
 
 *Figure 3.6 Glasses suggest page*
 
@@ -85,7 +85,7 @@ Based on the detected face shape, the system recommends suitable eyeglasses mode
 ---
 
 ### Face Shape Recognition Page
-![Face shape recognition Page](public/images/Demo/Face shape recognition Page.png)
+![Face shape recognition Page](public/images/Demo/Face%20shape%20recognition%20Page.png)
 
 *Figure 3.7 Face shape recognition page*
 
@@ -94,7 +94,7 @@ Users upload a facial image, and the AI model classifies the face shape into pre
 ---
 
 ### Virtual Try-On Page
-![Virtual Try-On Page](public/images/Demo/Virtual Try-On Page.png)
+![Virtual Try-On Page](public/images/Demo/Virtual%20Try-On%20Page.png)
 
 *Figure 3.8 Virtual Try-On page*
 
@@ -103,7 +103,7 @@ The virtual try-on feature allows users to preview eyeglasses directly on their 
 ---
 
 ### Cart Page
-![Cart page screen](public/images/Demo/Cart page screen.png)
+![Cart page screen](public/images/Demo/Cart%20page%20screen.png)
 
 *Figure 3.9 Cart page*
 
@@ -112,7 +112,7 @@ The cart page allows users to manage selected products, update quantities, and v
 ---
 
 ### Checkout Page
-![Checkout page screen](public/images/Demo/Checkout page screen.png)
+![Checkout page screen](public/images/Demo/Checkout%20page%20screen.png)
 
 *Figure 3.10 Checkout page*
 
@@ -121,7 +121,7 @@ Users enter shipping information, choose a payment method, and confirm their ord
 ---
 
 ### Order Page
-![Order page](public/images/Demo/Order page.png)
+![Order page](public/images/Demo/Order%20page.png)
 
 *Figure 3.11 Order page*
 
@@ -130,7 +130,7 @@ This page displays the list of orders placed by the user along with order status
 ---
 
 ### Order Detail Page
-![Order detail page](public/images/Demo/Order detail page.png)
+![Order detail page](public/images/Demo/Order%20detail%20page.png)
 
 *Figure 3.12 Order detail page*
 
@@ -139,7 +139,7 @@ The order detail page shows detailed information about products, quantities, pri
 ---
 
 ### Admin Home Page
-![Admin home page](public/images/Demo/Admin home page.png)
+![Admin home page](public/images/Demo/Admin%20home%20page.png)
 
 *Figure 3.13 Admin home page*
 
@@ -148,7 +148,7 @@ The admin dashboard provides an overview of users, products, and orders in the s
 ---
 
 ### User Management Page
-![User management page](public/images/Demo/User management page.png)
+![User management page](public/images/Demo/User%20management%20page.png)
 
 *Figure 3.14 User management page*
 
@@ -157,7 +157,7 @@ Administrators can view, add, edit, or delete user accounts on this page.
 ---
 
 ### Product Management Page
-![Product management page](public/images/Demo/Product management page.png)
+![Product management page](public/images/Demo/Product%20management%20page.png)
 
 *Figure 3.15 Product management page*
 
@@ -166,7 +166,7 @@ This page allows administrators to manage product information including name, pr
 ---
 
 ### Order Management Page
-![Order management page](public/images/Demo/Order management page.png)
+![Order management page](public/images/Demo/Order%20management%20page.png)
 
 *Figure 3.16 Order management page*
 
