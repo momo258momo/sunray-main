@@ -30,43 +30,43 @@ The system combines traditional online shopping with Artificial Intelligence, pr
 
 ## System Implementation Results
 
-### Register Screen
-![Register screen](public/images/Demo/Register%20screen.png)
+### Register
+![Register](public/images/Demo/Register%20screen.png)
 
-*Figure 3.1 Register screen*
+*Figure 3.1 Register page*
 
-The registration screen allows users to create a new account by entering basic information such as full name, email, password, and password confirmation.
-
----
-
-### Login Screen
-![Login screen](public/images/Demo/Login%20screen.png)
-
-*Figure 3.2 Login screen*
-
-The login screen allows users and administrators to access the system using their registered credentials.
+The registration page allows users to create a new account by entering basic information such as full name, email, password, and password confirmation.
 
 ---
 
-### Home Screen
-![Home screen](public/images/Demo/Home%20screen.png)
+### Login
+![Login](public/images/Demo/Login%20screen.png)
 
-*Figure 3.3 Home screen*
+*Figure 3.2 Login page*
 
-The home screen displays banners, featured products, search functionality, and product categories for easy navigation.
+The login page allows users and administrators to access the system using their registered credentials.
 
 ---
 
-### Product Page
+### Home
+![Home](public/images/Demo/Home%20screen.png)
+
+*Figure 3.3 Home page*
+
+The home page displays banners, featured products, search functionality, and product categories for easy navigation.
+
+---
+
+### Product List
 ![Product page](public/images/Demo/Product%20page.png)
 
-*Figure 3.4 Product page*
+*Figure 3.4 Product list page*
 
 This page displays all available eyeglasses with images, names, prices, and availability.
 
 ---
 
-### Product Detail Page
+### Product Detail
 ![Product detail page](public/images/Demo/Product%20detail%20page.png)
 
 *Figure 3.5 Product detail page*
@@ -75,16 +75,16 @@ The product detail page provides detailed information including product descript
 
 ---
 
-### Glasses Suggest Page
+### Glasses Recommendation
 ![Glasses suggest page](public/images/Demo/Glasses%20suggest%20page.png)
 
-*Figure 3.6 Glasses suggest page*
+*Figure 3.6 Glasses recommendation page*
 
 Based on the detected face shape, the system recommends suitable eyeglasses models to the user.
 
 ---
 
-### Face Shape Recognition Page
+### Face Shape Recognition
 ![Face shape recognition Page](public/images/Demo/Face%20shape%20recognition%20Page.png)
 
 *Figure 3.7 Face shape recognition page*
@@ -93,17 +93,17 @@ Users upload a facial image, and the AI model classifies the face shape into pre
 
 ---
 
-### Virtual Try-On Page
+### Virtual Try-On
 ![Virtual Try-On Page](public/images/Demo/Virtual%20Try-On%20Page.png)
 
-*Figure 3.8 Virtual Try-On page*
+*Figure 3.8 Virtual try-on page*
 
 The virtual try-on feature allows users to preview eyeglasses directly on their facial images for a more realistic shopping experience.
 
 ---
 
-### Cart Page
-![Cart page screen](public/images/Demo/Cart%20page%20screen.png)
+### Cart
+![Cart page](public/images/Demo/Cart%20page%20screen.png)
 
 *Figure 3.9 Cart page*
 
@@ -111,8 +111,8 @@ The cart page allows users to manage selected products, update quantities, and v
 
 ---
 
-### Checkout Page
-![Checkout page screen](public/images/Demo/Checkout%20page%20screen.png)
+### Checkout
+![Checkout page](public/images/Demo/Checkout%20page%20screen.png)
 
 *Figure 3.10 Checkout page*
 
@@ -120,7 +120,7 @@ Users enter shipping information, choose a payment method, and confirm their ord
 
 ---
 
-### Order Page
+### Orders
 ![Order page](public/images/Demo/Order%20page.png)
 
 *Figure 3.11 Order page*
@@ -129,7 +129,7 @@ This page displays the list of orders placed by the user along with order status
 
 ---
 
-### Order Detail Page
+### Order Detail
 ![Order detail page](public/images/Demo/Order%20detail%20page.png)
 
 *Figure 3.12 Order detail page*
@@ -138,16 +138,16 @@ The order detail page shows detailed information about products, quantities, pri
 
 ---
 
-### Admin Home Page
+### Admin Dashboard
 ![Admin home page](public/images/Demo/Admin%20home%20page.png)
 
-*Figure 3.13 Admin home page*
+*Figure 3.13 Admin dashboard*
 
 The admin dashboard provides an overview of users, products, and orders in the system.
 
 ---
 
-### User Management Page
+### User Management
 ![User management page](public/images/Demo/User%20management%20page.png)
 
 *Figure 3.14 User management page*
@@ -156,7 +156,7 @@ Administrators can view, add, edit, or delete user accounts on this page.
 
 ---
 
-### Product Management Page
+### Product Management
 ![Product management page](public/images/Demo/Product%20management%20page.png)
 
 *Figure 3.15 Product management page*
@@ -165,7 +165,7 @@ This page allows administrators to manage product information including name, pr
 
 ---
 
-### Order Management Page
+### Order Management
 ![Order management page](public/images/Demo/Order%20management%20page.png)
 
 *Figure 3.16 Order management page*
