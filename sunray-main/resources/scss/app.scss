@@ -1,0 +1,517 @@
+/* ================= VARIABLES & THEME ================= */
+$primary-color: hsl(180, 50%, 30%);
+$primary-color-dark: hsl(180, 50%, 25%);
+$bg-light: #f4f6f9;
+$card-bg: #ffffff;
+$text-dark: #212529;
+$border-light: #e5e7eb;
+$font-family-sans-serif: 'Inter', sans-serif;
+
+/* ================= NAVBAR THEME ================= */
+$navbar-icon-color: $primary-color;
+$navbar-link-color: $text-dark;
+$navbar-dropdown-hover: lighten($primary-color, 45%);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --bs-primary: #{$primary-color};
+}
+
+/* ================= BODY ================= */
+body {
+    background: $bg-light;
+    font-family: $font-family-sans-serif;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* ================= FILTER BAR ================= */
+.filter-bar {
+    background: $card-bg;
+    border: 1px solid $border-light;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #4169E1;
+    color: #fff;
+    padding: 20px 15px;
+    position: fixed;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .nav-link {
+        color: #fff;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+
+        &:hover,
+        &.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    margin-left: 260px;
+    padding: 30px;
+}
+
+/* ================= NAVBAR ================= */
+header,
+.navbar,
+.navbar-collapse {
+    overflow: visible !important;
+}
+
+.dropdown-menu {
+    z-index: 1055;
+}
+
+/* ===================================================== */
+/* ================= NEW PRODUCT CARD ================== */
+/* ===================================================== */
+
+.product-card-new {
+    background: #fff;
+    border-radius: 20px;
+    padding: 18px;
+    position: relative;
+    height: 100%;
+    transition: all 0.25s ease;
+}
+
+.product-card-new:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= HẾT HÀNG – MỜ FULL CARD ================= */
+.product-card-new.is-out-of-stock {
+    opacity: 0.45;
+    filter: grayscale(100%);
+}
+
+/* ❗ CHO PHÉP CLICK ẢNH */
+.product-card-new.is-out-of-stock .product-image-new {
+    pointer-events: auto;
+}
+
+/* ================= IMAGE ================= */
+.product-image-new {
+    width: 100%;
+    height: 260px;
+    display: block;
+    position: relative;
+}
+
+.product-image-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ================= HẾT HÀNG TEXT ================= */
+.out-of-stock-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+/* ================= SALE BADGE ================= */
+.sale-badge-new {
+    position: absolute;
+    right: 1px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+/* ================= BODY ================= */
+.product-body-new {
+    margin-top: 16px;
+}
+
+.product-title-new {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    color: #222;
+}
+
+/* ================= PRICE + CART ================= */
+.product-bottom-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PRICE */
+.product-price-new del {
+    display: block;
+    font-size: 15px;
+    color: #dc3545;
+}
+
+.product-price-new span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* ================= CART ================= */
+.cart-btn-new {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.cart-btn-new:hover {
+    transform: scale(1.15);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .product-image-new {
+        height: 200px;
+    }
+}
+
+
+
+/* ================= ADMIN FORM ================= */
+.main-content h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-content form {
+    border-radius: 16px;
+}
+
+.main-content label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.main-content input,
+.main-content textarea,
+.main-content select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: border-color .2s;
+}
+
+.main-content input:focus,
+.main-content textarea:focus,
+.main-content select:focus {
+    outline: none;
+    border-color: #4169E1;
+}
+
+.main-content textarea {
+    resize: vertical;
+}
+.main-content textarea#long_description {
+    min-height: 450px;   /* gấp ~3 lần mặc định */
+}
+.main-content input[type="file"] {
+    border: none;
+    padding: 6px 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+.admin-form button[type="submit"] {
+    // margin-top: 22px;
+    padding: 12px 24px;
+    background: #047a35;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-content button[type="submit"]:hover {
+    background: #365ad8;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 20px auto; /* checkbox | chữ */
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    justify-self: center; /* checkbox nằm giữa */
+}
+
+.checkbox-group label {
+    margin: 0;
+    justify-self: start;  /* chữ nằm về bên phải */
+    cursor: pointer;
+}
+
+
+.table-product-management {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-product-management th, 
+.table-product-management td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-product-management th:nth-child(1),
+.table-product-management td:nth-child(1) {
+    width: 50px;
+}
+
+.table-product-management th:nth-child(2),
+.table-product-management td:nth-child(2) {
+    width: 150px;
+}
+
+.table-product-management th:nth-child(3),
+.table-product-management td:nth-child(3) {
+    width: 200px;
+}
+
+.table-product-management th:nth-child(4),
+.table-product-management td:nth-child(4) {
+    width: 100px;
+}
+
+.table-product-management th:nth-child(5),
+.table-product-management td:nth-child(5) {
+    width: 100px;
+}
+
+.table-product-management th:nth-child(6),
+.table-product-management td:nth-child(6) {
+    width: 120px;
+}
+
+.table-product-management td:nth-child(2) img {
+    width: 150px;
+    height: 100px;              /* thấp hơn vì ảnh kính ngang */
+    object-fit: contain;        /* KHÔNG CẮT ẢNH */
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* ================= DELETE IMAGE BUTTON ================= */
+.image-grid .delete-btn {
+    all: unset;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 26px;
+    height: 26px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-grid .delete-btn:hover {
+    background: #dc3545;
+}
+/* ================= USER TABLE BUTTON ================= */
+.table td .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+/* ================= IMAGE GRID ================= */
+.image-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    position: relative; /* BẮT BUỘC để nút X bám theo ảnh */
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= DELETE IMAGE BUTTON ================= */
+.image-box .delete-btn {
+    all: unset;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 28px;
+    height: 28px;
+    background: #dc3545; /* 🔴 MÀU ĐỎ */
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+.image-box .delete-btn:hover {
+    background: #b02a37;
+}
+/* ================= ADMIN FORM ================= */
+.admin-form button[type="submit"] {
+    margin-top: 22px;
+    padding: 12px 24px;
+    background: #4169E1;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-form button[type="submit"]:hover {
+    background: #365ad8;
+}
+/* ===== HERO BANNER ===== */
+.banner {
+    margin-top: 0;          /* ❌ bỏ khoảng trắng */
+    padding-top: 0;         /* ❌ nếu có */
+    height: 420px;          /* ✅ thu nhỏ banner */
+    background: url('/images/home-banner.jpg') center / cover no-repeat;
+    position: relative;
+}
+
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        42deg,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.3)
+    );
+}
+
+.banner-title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: clamp(32px, 6vw, 64px);
+}
+
+.banner-desc {
+    font-size: clamp(16px, 2.2vw, 20px);
+    opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .banner {
+        height: 420px;
+    }
+}
+
+.modal-overlay{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+}
+.modal-image{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius:6px;
+}
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.prev-btn, .next-btn{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:40px;
+    user-select:none;
+    transform:translateY(-50%);
+}
+.prev-btn{ left:10px; }
+.next-btn{ right:10px; }
+.card:hover { box-shadow: 0 6px 12px rgba(0,0,0,0.12); transition: 0.2s; }
